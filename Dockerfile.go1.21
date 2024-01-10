@@ -1,0 +1,5 @@
+FROM golang:1.21.2-alpine as builder
+RUN apk add --no-cache make sudo git
+#
+ENTRYPOINT ["/bin/sh"]
+#
